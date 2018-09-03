@@ -4,9 +4,9 @@ This document contain the information for installing necessary pre-requisites fo
 
 Below are some of the imperative requirements:
 
-1. Create a free Github account if you do not already have one - see [SW Eng Handbook - Github Guide](https://github.com/uribench/software-engineering-handbook/tree/master/Guides/Git)
+1. Create a free Github account if you do not already have one - see [Signing up for a new GitHub Account](https://help.github.com/articles/signing-up-for-a-new-github-account/)
 
-2. Add a new SSH key to your github account - see [SW Eng Handbook - SSH Guide](https://github.com/uribench/software-engineering-handbook/tree/master/Guides/SSH)
+2. Add a new SSH key to your github account - see [Connecting to GitHub with SSH](https://help.github.com/articles/connecting-to-github-with-ssh/)
 
 3. Install Gitbash in your system from [https://git-scm.com/downloads](https://git-scm.com/downloads)
 
