@@ -1,6 +1,6 @@
 # CI Workshop Materials
 
-[![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://github.com/xylene1980/ciworkshop/graphs/contributors/))
+[![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://github.com/xylene1980/ciworkshop/graphs/contributors/)
 
 
 
