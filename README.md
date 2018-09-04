@@ -1,6 +1,6 @@
 # CI Workshop Materials
 
-[![GitHub issues](https://img.shields.io/github/issues/xylene1980/ciworkshop.svg)](https://github.com/xylene1980/ciworkshop/issues)[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/badges/shields.svg)](https://github.com/xylene1980/ciworkshop/issues?q=is%3Aissue+is%3Aclosed)
+[![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://github.com/xylene1980/ciworkshop/graphs/contributors/))
 
 
 
