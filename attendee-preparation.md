@@ -10,7 +10,11 @@ Below are some of the imperative requirements:
 
 3. Install Gitbash in your system from [https://git-scm.com/downloads](https://git-scm.com/downloads)
 
-4. Run Git configuration script [setup-scripts/Set-GitConfiguration.ps1](scripts/Set-GitConfiguration.ps1)
+4. Check Git configuration script [setup-scripts/Set-GitConfiguration.ps1](scripts/Set-GitConfiguration.ps1)
+
+   Please run the above script as below from the *setup-scripts* directory
+
+   `Set-Configuration.ps1 -name FirstName.LastName -email FirstName.LastName@philips.com`
 
 5. Create a free Travis CI account if you do not already have one using [https://travis-ci.org/](https://travis-ci.org/)
 
