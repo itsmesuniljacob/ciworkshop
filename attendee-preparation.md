@@ -14,7 +14,7 @@ Below are some of the imperative requirements:
 
    Please run the above script as below from the *setup-scripts* directory
 
-   `Set-Configuration.ps1 -name FirstName.LastName -email FirstName.LastName@philips.com`
+   `Set-GitConfiguration.ps1 -name FirstName.LastName -email FirstName.LastName@philips.com`
 
 5. Create a free Travis CI account if you do not already have one using [https://travis-ci.org/](https://travis-ci.org/)
 
@@ -26,4 +26,9 @@ Below are some of the imperative requirements:
 
    Once the above command has been executed successfully you can run the *Install_Java* script
 
-7. Clone the initial program for the workshop from [ci-workshop-code/](ci-workshop-code/)
+7.  Install IntelliJ IDE or Eclipse IDE from the below sites
+
+   1. https://www.jetbrains.com/idea/download/index.html
+
+8. Clone the initial program for the workshop from [ci-workshop-code/](ci-workshop-code/)
+
