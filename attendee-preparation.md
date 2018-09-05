@@ -26,9 +26,9 @@ Below are some of the imperative requirements:
 
    Once the above command has been executed successfully you can run the *Install_Java* script
 
-7.  Install IntelliJ IDE or Eclipse IDE from the below sites
+7.  Install IntelliJ IDE from the below sites
 
-   1. https://www.jetbrains.com/idea/download/index.html
+     https://www.jetbrains.com/idea/download/index.html
 
 8. Clone the initial program for the workshop from [ci-workshop-code/](ci-workshop-code/)
 
