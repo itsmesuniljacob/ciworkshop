@@ -1,6 +1,6 @@
 # CI Workshop Materials
 
-[![GitHub pull-requests](https://img.shields.io/github/issues-pr/xylene1980/ciworkshop.svg)](https://github.com/xylene1980/ciworkshop/pulls?q=is%3Aopen+is%3Apr)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/xylene1980/ciworkshop.svg)](https://github.com/xylene1980/ciworkshop/pulls)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr-closed/xylene1980/ciworkshop.svg)](https://github.com/xylene1980/ciworkshop/pulls?q=is%3Apr+is%3Aclosed)
 [![GitHub pull-requests closed](https://img.shields.io/github/contributors/xylene1980/ciworkshop.svg)](https://github.com/xylene1980/ciworkshop/graphs/contributors)
 [![GitHub issues](https://img.shields.io/github/issues/xylene1980/ciworkshop.svg)](https://github.com/xylene1980/ciworkshop/issues?q=is%3Aopen+is%3Aissue)
