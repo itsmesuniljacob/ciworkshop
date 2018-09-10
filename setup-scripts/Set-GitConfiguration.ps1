@@ -1,9 +1,6 @@
-#-------------------------------------------------------------------------------------#
-#  This power shell script will help configure the git configuration settings         #
-#-------------------------------------------------------------------------------------#
-param([String]$name)
-param([String]$email)
-
+param([String]$name,[String]$email)
+$path = @('user.name','user.email','http.proxy','https.proxy')
+$inp = @($name,$email,$proxy,$proxy)
 function isSuccess {
 	param([String]$property = "unknown")
 	if($?) {
@@ -11,14 +8,15 @@ function isSuccess {
 	}
 	else {
 		"Config $property... is not updated"
+		Exit
 	}
 }
 
-git config --global user.name "$name"
-isSuccess -property user.name
-git config --global user.email "$email"
-isSuccess -property user.email
-git config --global http.proxy http://165.225.104.34:9480
-isSuccess -property http.proxy
-git config --global https.proxy http://165.225.104.34:9480
-isSuccess -property https.proxy
+$i=0
+do {
+		Foreach ($p in $path) {
+			git config --global $p $inp[$i]
+			isSuccess -property $p
+			$i++
+		}
+} while ($i -lt 4)
