@@ -3,7 +3,6 @@
 $JDK_VER="8u181"
 # $JDK_FULL_VER="8u181-b13"
 $JDK_PATH="C:\Program Files\Java\jdk1.8\bin"
-$JRE_PATH="C:\Program Files\Java\jre1.8.0_181\bin"
 $source64="http://download.oracle.com/otn-pub/java/jdk/8u181-b13/96a7b8442fe848ef90c96a2fad6ed6d1/jdk-8u181-windows-x64.exe"
 $output = (Get-CimInstance -Class win32_computersystem).UserName
 $uname = $output.SubString($output.LastIndexOf('\')+1)
@@ -22,7 +21,6 @@ function IsPowerShellAdministrator {
 
 function configureJava() {
   [Environment]::SetEnvironmentVariable("PATH",([Environment]::GetEnvironmentVariable("PATH","User"))+"$JDK_PATH","User")
-  [Environment]::SetEnvironmentVariable("PATH",([Environment]::GetEnvironmentVariable("PATH","User"))+"$JRE_PATH","User")
 }
 ###############################
 'Checking if Java is already installed'
