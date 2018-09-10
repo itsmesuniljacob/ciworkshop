@@ -13,7 +13,6 @@ Below are some of the imperative requirements:
 4. Check Git configuration script [setup-scripts/Set-GitConfiguration.ps1](scripts/Set-GitConfiguration.ps1)
 
    Please run the above script as below from the *setup-scripts* directory, **if you do have existing setup/configuration there is no need to run this script**
-
    `Set-Configuration.ps1 -name FirstName.LastName -email FirstName.LastName@gmail.com`
 
 5. Create a free Travis CI account if you do not already have one using [https://travis-ci.org/](https://travis-ci.org/)
