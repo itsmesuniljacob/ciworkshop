@@ -10,13 +10,6 @@ describe 'Check URL Path' {
   }
 }
 
-describe 'Get Username' {
-  $output = (Get-CimInstance -Class win32_computersystem).UserName
-  $uname = $output.SubString($output.LastIndexOf('\')+1)
-  it 'should return 320029165' {
-    $uname | should be 320029165
-  }
-}
 
 describe 'Test JAVA installation' {
   $out=&"javac.exe" -version 2>&1
