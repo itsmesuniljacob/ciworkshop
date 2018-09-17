@@ -49,39 +49,26 @@ function Invoke-Test
 
 function Confirm-Prerequisite
 {
-    (
-        (Get-Module -Name PSScriptAnalyzer).Length *
-        (Get-Module -Name Pester).Length *
-        (Get-PackageProvider -Name Nuget).Length
-    ) -ne 0
-}
-
-function Install-Prerequisite
-{
-    if ((Confirm-Prerequisite))
-    {
-        return
+    $success=$false
+    try {
+        $success=((
+            (Get-Command -Module PSScriptAnalyzer).Length *
+            (Get-Command -Module Pester).Length *
+            (Get-PackageProvider | Where-Object {$_.Name -eq "NuGet"}).Length
+        ) -ne 0)
     }
-
-    Write-Output "Installing build prerequisites"
-    $code = ".\Install-BuildPrerequisites.ps1"
-    if (Confirm-AdministratorContext)
-    {
-        Invoke-Command "$code"
+    catch {
+        Write-Output "One or more prerequisites not available: $_Exception.Message"
+        break
     }
-    else
-    {
-        Start-Process -FilePath powershell.exe -ArgumentList $code -verb RunAs
-    }
-
-    if (-not (Confirm-Prerequisite))
-    {
-        throw "Build Failed. Installation of build prerequisites failed."
-    }
+    $success
 }
 
 Write-Output "Build starting"
-Install-Prerequisite
+if (-not (Confirm-Prerequisite))
+{
+    throw "Build failed. Prerequisites missing. Please run Install-BuildPrerequisites.ps1 (running as administrator if needed)"
+}
 Write-Output "Building"
 Invoke-Build
 Write-Output "Build complete"
