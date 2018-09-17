@@ -1,15 +1,9 @@
-
-# function Test-Path {
-#   Test-Path 'C:\Users\$uname\.gitconfig'
-# }
-
-describe 'Check URL Path' {
-  $result = "http://download.oracle.com/otn-pub/java/jdk/8u181-b13/96a7b8442fe848ef90c96a2fad6ed6d1/jdk-8u181-windows-x64.exe"
-  it 'should return True' {
-    $result | should be "http://download.oracle.com/otn-pub/java/jdk/8u181-b13/96a7b8442fe848ef90c96a2fad6ed6d1/jdk-8u181-windows-x64.exe"
-  }
-}
-
+#describe 'Check URL Path' {
+#  $result = "http://download.oracle.com/otn-pub/java/jdk/8u181-b13/96a7b8442fe848ef90c96a2fad6ed6d1/jdk-8u181-windows-x64.exe"
+#  it 'should return True' {
+#    $result | should be "http://download.oracle.com/otn-pub/java/jdk/8u181-b13/96a7b8442fe848ef90c96a2fad6ed6d1/jdk-8u181-windows-x64.exe"
+#  }
+#}
 
 describe 'Test JAVA installation' {
   $out=&"javac.exe" -version 2>&1
