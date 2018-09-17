@@ -1,11 +1,9 @@
-#Yml file
 language: generic
 matrix:
   include:
-    -os: linux
-     dist: trusty
-     sudo: false
-     addons:
-       apt:
+    - os: linux
+      dist: trusty
+      sudo: false
+      addons:
         packages:
-          - powershell
+          - powershell  
