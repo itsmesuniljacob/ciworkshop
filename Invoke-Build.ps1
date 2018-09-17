@@ -67,7 +67,7 @@ function Confirm-Prerequisite
 Write-Output "Build starting"
 if (-not (Confirm-Prerequisite))
 {
-    throw "Build failed. Prerequisites missing. Please run Install-BuildPrerequisites.ps1 (running as administrator if needed)"
+    throw "Build failed. Prerequisites missing. Please run Install-BuildPrerequisite.ps1 (running as administrator if needed)"
 }
 Write-Output "Building"
 Invoke-Build
