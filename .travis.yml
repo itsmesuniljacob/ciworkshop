@@ -12,4 +12,4 @@ matrix:
           packages:
             - powershell
 script:
-  - pwsh -f "${env:TRAVIS_BUILD_DIR}/setup-scripts/test.ps1"
+  - pwsh -f "${env:TRAVIS_BUILD_DIR}\setup-scripts\test.ps1"
