@@ -6,4 +6,6 @@ matrix:
       sudo: false
       addons:
         packages:
-          - powershell  
+          - powershell
+script:
+  - pwsh -f "${env:TRAVIS_BUILD_DIR}/setup-scripts/test.ps1" 
