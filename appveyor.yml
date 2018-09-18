@@ -1,0 +1,7 @@
+version: 0.11.0.{build}
+
+install:
+    - ps: |
+        Write-Host "PowerShell Version:" $PSVersionTable.PSVersion.tostring()
+        Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
+        Install-Module Pester -Force
