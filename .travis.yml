@@ -12,6 +12,6 @@ matrix:
           packages:
             - powershell
 install:
-  - pwsh /setup-scripts/install.ps1 
+  - pwsh install.ps1
 script:
   - pwsh -f "setup-scripts/test.ps1"
