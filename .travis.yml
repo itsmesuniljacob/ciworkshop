@@ -12,6 +12,6 @@ matrix:
           packages:
             - powershell
 install:
-  - pwsh -f "${env:TRAVIS_BUILD_DIR}/setup-scripts/install-dependencies.ps1"
+  - pwsh Install-BuildPrerequisite.ps1
 script:
   - pwsh -f "setup-scripts/test.ps1"
