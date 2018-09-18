@@ -13,5 +13,4 @@ matrix:
             - powershell
 script:
   - echo $TRAVIS_BUILD_DIR
-  - ls
-  - dir
+  - ls .\setup-scripts\
