@@ -13,3 +13,4 @@ matrix:
             - powershell
 script:
   - echo $TRAVIS_BUILD_DIR
+  - pwsh -f "${env:TRAVIS_BUILD_DIR}/setup-scripts test.ps1
