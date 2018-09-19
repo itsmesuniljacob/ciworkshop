@@ -34,7 +34,7 @@ if($reply -match "[yY]") {
   # }
 
   foreach($p in $path) {
-  	$body = Get-Childitem -Path $p -Include javac.exe -Recurse -ErrorAction SilentlyContinue | select name
+  	$body = Get-Childitem -Path $p -Include javac.exe -Recurse -ErrorAction SilentlyContinue
   	if ($body[0].Name -eq $javac) {
   		"Found java compiler"
   		$out=&"javac.exe" -version 2>&1
