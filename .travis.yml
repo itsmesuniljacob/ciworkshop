@@ -13,5 +13,5 @@ matrix:
             - powershell
 # install:
 #   - pwsh Install-BuildPrerequisite.ps1
-script:
-  - pwsh -f "setup-scripts/test.ps1"
+# script:
+#   - pwsh -f "setup-scripts/test.ps1"
