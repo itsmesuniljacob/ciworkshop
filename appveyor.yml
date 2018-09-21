@@ -1,7 +1,11 @@
-version: 0.11.0.{build}
-
-install:
-    - ps: |
-        Write-Host "PowerShell Version:" $PSVersionTable.PSVersion.tostring()
-        Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
-        Install-Module Pester -Force
+image: Visual Studio 2015
+# branches:
+#   only:
+#     - test
+build: false
+before_build:
+  - ps: .\Install-BuildPrerequisite.ps1
+build_script:
+  - ps: .\Invoke-Build.ps1 -AppVeyor
+after_build:
+  - ps: .\setup-scripts\Install-JDK-Tests.ps1
