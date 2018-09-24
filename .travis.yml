@@ -19,6 +19,5 @@ matrix:
 install:
   - pwsh Install-Dependencies.ps1
 script:
-  - sonar-scanner -Dsonar.organization=xylene1980-github -Dsonar.sources=. -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=74b5a406d4faa6475d458824
-332bb7ec1d9db028
+  - sonar-scanner -Dsonar.organization=xylene1980-github -Dsonar.sources=. -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
   - pwsh Invoke-Build.ps1
