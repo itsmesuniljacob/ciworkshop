@@ -5,6 +5,10 @@ matrix:
       dist: trusty
       sudo: true
       addons:
+        sonarcloud:
+          organization: "xylene1980-github"
+          token:
+            secure: "$SONAR_TOKEN"
         apt:
           sources:
             - sourceline: "deb [arch=amd64] https://packages.microsoft.com/ubuntu/14.04/prod trusty main"
