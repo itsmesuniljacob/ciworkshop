@@ -10,3 +10,5 @@ build_script:
   - ps: .\Invoke-Build.ps1 -AppVeyor
 after_build:
   - ps: .\setup-scripts\Install-JDK-Tests.ps1
+
+#test
