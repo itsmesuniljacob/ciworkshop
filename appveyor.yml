@@ -4,9 +4,11 @@ image: Visual Studio 2015
 #     - test
 build: false
 before_build:
-  ps: .\setup-scripts\Set-GitConfiguration.ps1 -reply S.Jacob s@to.com
+  - ps: .\setup-scripts\Set-GitConfiguration.ps1 -reply S.Jacob s@to.com
   - ps: .\Install-BuildPrerequisite.ps1
 build_script:
   - ps: .\Invoke-Build.ps1 -AppVeyor
 after_build:
   - ps: .\setup-scripts\Install-JDK-Tests.ps1
+
+#test
