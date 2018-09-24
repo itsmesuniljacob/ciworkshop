@@ -9,6 +9,7 @@ matrix:
           organization: "xylene1980-github"
           token:
             secure: "$SONAR_TOKEN"
+
         apt:
           sources:
             - sourceline: "deb [arch=amd64] https://packages.microsoft.com/ubuntu/14.04/prod trusty main"
@@ -18,4 +19,5 @@ matrix:
 install:
   - pwsh Install-Dependencies.ps1
 script:
+  - sonar-scanner
   - pwsh Invoke-Build.ps1
