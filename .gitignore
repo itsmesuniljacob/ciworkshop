@@ -3,6 +3,11 @@
 .scannerwork/
 # Log file
 *.log
+**.idea/
+ciworkshop.iml
+.idea/compiler.xml
+**target/
+target/sonar/report-task.txt
 
 # BlueJ files
 *.ctxt

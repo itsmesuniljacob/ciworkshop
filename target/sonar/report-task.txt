@@ -1,0 +1,6 @@
+projectKey=com.workshop.ci:workshop
+serverUrl=http://localhost:9000
+serverVersion=6.7.5.38563
+dashboardUrl=http://localhost:9000/dashboard/index/com.workshop.ci:workshop
+ceTaskId=AWY4rJti0vu_k2Q815PV
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWY4rJti0vu_k2Q815PV
