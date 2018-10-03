@@ -3,6 +3,9 @@
 .scannerwork/
 # Log file
 *.log
+**.idea/
+ciworkshop.iml
+.idea/compiler.xml
 
 # BlueJ files
 *.ctxt
