@@ -2,10 +2,15 @@ image: Visual Studio 2015
 branches:
   only:
     - master
-build: false
+install:
+  - choco install gitversion.portable -pre -y
+
 before_build:
+  - nuget restore
+  - ps: gitversion /l console /output buildserver /updateAssemblyInfo
   - ps: .\setup-scripts\Set-GitConfiguration.ps1 -reply S.Jacob s@to.com
   - ps: .\Install-BuildPrerequisite.ps1
+
 build_script:
   - ps: .\Invoke-Build.ps1 -AppVeyor
 after_build:
