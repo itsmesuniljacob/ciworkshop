@@ -6,7 +6,6 @@ install:
   - choco install gitversion.portable -pre -y
 
 before_build:
-  - nuget restore
   - ps: gitversion /l console /output buildserver /updateAssemblyInfo
   - ps: .\setup-scripts\Set-GitConfiguration.ps1 -reply S.Jacob s@to.com
   - ps: .\Install-BuildPrerequisite.ps1
