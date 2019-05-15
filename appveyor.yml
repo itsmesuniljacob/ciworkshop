@@ -6,6 +6,7 @@ build: false
 before_build:
   - ps: .\setup-scripts\Set-GitConfiguration.ps1 -reply S.Jacob s@to.com
   - ps: .\Install-BuildPrerequisite.ps1
+  - ps: .\Gitversion init
 build_script:
   - ps: .\Invoke-Build.ps1 -AppVeyor
 after_build:
